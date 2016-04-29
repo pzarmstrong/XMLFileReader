@@ -1,0 +1,6 @@
+*.xml
+data/output.txt
+*.jar
+XMLFileRead.zip
+*.txt
+bin/main/Main.class

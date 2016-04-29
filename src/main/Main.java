@@ -95,45 +95,12 @@ public class Main
                 if (event.asStartElement().getName().getLocalPart().equals("data1"))
                 {
                     event = eventRead.nextEvent();
-                    System.out.println("SequenceNumber: " + event.asCharacters().getData());
-                    writer.println("SequenceNumber: " + event.asCharacters().getData());
+                    System.out.println("data1: " + event.asCharacters().getData());
+                    writer.println("data1: " + event.asCharacters().getData());
                     continue;
                 }
-                if (event.asStartElement().getName().getLocalPart().equals("data2"))
-                {
-                    event = eventRead.nextEvent();
-                    System.out.println("UPN: " + event.asCharacters().getData());
-                    writer.println("UPN: " + event.asCharacters().getData());
-                    continue;
-                }
-                if (event.asStartElement().getName().getLocalPart().equals("data3"))
-                {
-                    event = eventRead.nextEvent();
-                    System.out.println("DCR: " + event.asCharacters().getData());
-                    writer.println("DCR: " + event.asCharacters().getData());
-                    continue;
-                }
-                if (event.asStartElement().getName().getLocalPart().equals("data4"))
-                {
-                    event = eventRead.nextEvent();
-                    System.out.println("PassFailStatus: " + event.asCharacters().getData());
-                    writer.println("PassFailStatus: " + event.asCharacters().getData());
-                    continue;
-                }
-                if (event.asStartElement().getName().getLocalPart().equals("data5"))
-                {
-                    event = eventRead.nextEvent();
-                    System.out.println("FailureReasonCode: " + event.asCharacters().getData());
-                    writer.println("FailureReasonCode: " + event.asCharacters().getData());
-                    continue;
-                }
-                if (event.asStartElement().getName().getLocalPart().equals("data6"))
-                {
-                    event = eventRead.nextEvent();
-                    System.out.println("FailureReasonText: " + event.asCharacters().getData());
-                    writer.println("FailureReasonText: " + event.asCharacters().getData());
-                    continue;
-                }
+                
+                // REPEAT ABOVE FOR EACH ELEMENT TO GET
             }
         }
     }
